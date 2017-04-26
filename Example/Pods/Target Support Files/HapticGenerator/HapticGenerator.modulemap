@@ -1,0 +1,6 @@
+framework module HapticGenerator {
+  umbrella header "HapticGenerator-umbrella.h"
+
+  export *
+  module * { export * }
+}

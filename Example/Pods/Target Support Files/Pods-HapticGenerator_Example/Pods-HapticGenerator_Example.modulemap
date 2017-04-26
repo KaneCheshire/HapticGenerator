@@ -1,0 +1,6 @@
+framework module Pods_HapticGenerator_Example {
+  umbrella header "Pods-HapticGenerator_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,16 @@
+PODS:
+  - HapticGenerator (0.1.0)
+
+DEPENDENCIES:
+  - HapticGenerator (from `../`)
+
+EXTERNAL SOURCES:
+  HapticGenerator:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  HapticGenerator: 680006e19e88ce2cbcfa9dffa347c587f2c37d6d
+
+PODFILE CHECKSUM: dbc7e20ccbee10e7647ffe4103b9acaedb3f72e7
+
+COCOAPODS: 1.2.1
