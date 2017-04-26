@@ -48,6 +48,9 @@ let notificationFeedbackGenerator = UINotificationFeedbackGenerator()
 // Generate the haptic
 notificationFeedbackGenerator.notificationOccurred(.success)
 
+
+
+
 // Compare that to the `HapticGenerator` way for all three:
 let selectionHapticGenerator = HapticGenerator(hapticType: .selection)
 selectionHapticGenerator.generateHaptic()
