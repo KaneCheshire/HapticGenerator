@@ -46,9 +46,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "607FACE41AFB9204008FA782"
-               BuildableName = "HapticGenerator_Tests.xctest"
-               BlueprintName = "HapticGenerator_Tests"
+               BlueprintIdentifier = "C3ADCCDB1EB13A9400C7DA0D"
+               BuildableName = "HapticGenerator_ExampleTests.xctest"
+               BlueprintName = "HapticGenerator_ExampleTests"
                ReferencedContainer = "container:HapticGenerator.xcodeproj">
             </BuildableReference>
          </TestableReference>

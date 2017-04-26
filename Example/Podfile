@@ -3,7 +3,7 @@ use_frameworks!
 target 'HapticGenerator_Example' do
   pod 'HapticGenerator', :path => '../'
 
-  target 'HapticGenerator_Tests' do
+  target 'HapticGenerator_ExampleTests' do
     inherit! :complete
 
     
