@@ -36,6 +36,7 @@ Optionally, you can tell the system to prepare the engine for (re)use like so:
 
 ```swift
 selectionHapticGenerator.prepareForUse()
+```
 
 ## Why use this?
 
