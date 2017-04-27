@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -18,9 +18,84 @@
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pup-Jj-iLR">
+                                <rect key="frame" x="128" y="137" width="64" height="30"/>
+                                <state key="normal" title="Selection"/>
+                                <connections>
+                                    <action selector="selectionTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ztE-Pn-znL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9gE-dz-EFv">
+                                <rect key="frame" x="117" y="199" width="86" height="30"/>
+                                <state key="normal" title="Light impact"/>
+                                <connections>
+                                    <action selector="lightImpactTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="uY2-6p-eOk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1rk-7e-MCp">
+                                <rect key="frame" x="107" y="261" width="106" height="30"/>
+                                <state key="normal" title="Medium impact"/>
+                                <connections>
+                                    <action selector="mediumImpactTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="atn-HU-QJT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xep-5E-J72">
+                                <rect key="frame" x="113" y="323" width="94" height="30"/>
+                                <state key="normal" title="Heavy impact"/>
+                                <connections>
+                                    <action selector="heavyImpactTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="zeP-np-g2W"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f18-Vi-Cl2">
+                                <rect key="frame" x="91" y="385" width="139" height="30"/>
+                                <state key="normal" title="Success notification"/>
+                                <connections>
+                                    <action selector="successNotificationTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="dz3-Z2-DQ7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rD6-EH-hym">
+                                <rect key="frame" x="92" y="447" width="138" height="30"/>
+                                <state key="normal" title="Warning notification"/>
+                                <connections>
+                                    <action selector="warningNotificationTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="acX-n9-g2A"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wmc-tG-Etw">
+                                <rect key="frame" x="103" y="509" width="115" height="30"/>
+                                <state key="normal" title="Error notification"/>
+                                <connections>
+                                    <action selector="errorNotificationTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="1Yg-1d-yr6"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The &quot;style&quot; of haptics iOS supports" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G1G-N0-AmY">
+                                <rect key="frame" x="25.5" y="52" width="269" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="pup-Jj-iLR" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="0ry-1B-KRF"/>
+                            <constraint firstItem="pup-Jj-iLR" firstAttribute="top" secondItem="G1G-N0-AmY" secondAttribute="bottom" constant="64" id="6gB-iR-agi"/>
+                            <constraint firstItem="rD6-EH-hym" firstAttribute="centerX" secondItem="f18-Vi-Cl2" secondAttribute="centerX" id="6ib-GN-VxW"/>
+                            <constraint firstItem="9gE-dz-EFv" firstAttribute="centerX" secondItem="pup-Jj-iLR" secondAttribute="centerX" id="8zr-yZ-kRP"/>
+                            <constraint firstItem="G1G-N0-AmY" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="32" id="PYG-vO-QwY"/>
+                            <constraint firstItem="1rk-7e-MCp" firstAttribute="top" secondItem="9gE-dz-EFv" secondAttribute="bottom" constant="32" id="S0T-Dt-M3S"/>
+                            <constraint firstItem="9gE-dz-EFv" firstAttribute="top" secondItem="pup-Jj-iLR" secondAttribute="bottom" constant="32" id="ZxV-Pj-fvJ"/>
+                            <constraint firstItem="G1G-N0-AmY" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="dYu-vp-htD"/>
+                            <constraint firstItem="rD6-EH-hym" firstAttribute="top" secondItem="f18-Vi-Cl2" secondAttribute="bottom" constant="32" id="faS-bQ-gVu"/>
+                            <constraint firstItem="1rk-7e-MCp" firstAttribute="centerX" secondItem="9gE-dz-EFv" secondAttribute="centerX" id="gFv-h1-Hhn"/>
+                            <constraint firstItem="wmc-tG-Etw" firstAttribute="top" secondItem="rD6-EH-hym" secondAttribute="bottom" constant="32" id="ian-yF-LBW"/>
+                            <constraint firstItem="f18-Vi-Cl2" firstAttribute="centerX" secondItem="xep-5E-J72" secondAttribute="centerX" id="iyg-TA-j0t"/>
+                            <constraint firstItem="xep-5E-J72" firstAttribute="centerX" secondItem="1rk-7e-MCp" secondAttribute="centerX" id="k02-LG-vFo"/>
+                            <constraint firstItem="wmc-tG-Etw" firstAttribute="centerX" secondItem="rD6-EH-hym" secondAttribute="centerX" id="mEV-J0-fVQ"/>
+                            <constraint firstItem="xep-5E-J72" firstAttribute="top" secondItem="1rk-7e-MCp" secondAttribute="bottom" constant="32" id="z48-vY-UTz"/>
+                            <constraint firstItem="f18-Vi-Cl2" firstAttribute="top" secondItem="xep-5E-J72" secondAttribute="bottom" constant="32" id="zcR-di-F6n"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
