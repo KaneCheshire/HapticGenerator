@@ -11,4 +11,4 @@ language: objective-c
 # - pod install --project-directory=Example
 script:
 - set -o pipefail && xcodebuild test -workspace Example/HapticGenerator.xcworkspace -scheme HapticGenerator-Example -sdk iphonesimulator10.0-destination "OS=10.0,name=iPhone 6s" | xcpretty
-- pod lib lint
+#- pod lib lint
