@@ -55,12 +55,10 @@ selectionFeedbackGenerator.selectionChanged()
 
 // Apple's way of using an impact feedback generator:
 let lightImpactFeedbackGenerator = UIImpactFeedbackGenerator(style: .light)
-// Generate the haptic:
 lightImpactFeedbackGenerator.impactOccurred()
 
 // Apple's way of using a notification feedback generator:
 let notificationFeedbackGenerator = UINotificationFeedbackGenerator()
-// Generate the haptic
 notificationFeedbackGenerator.notificationOccurred(.success)
 
 // Compare that to the `HapticGenerator` way for all three:
