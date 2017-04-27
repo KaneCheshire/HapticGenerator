@@ -1,7 +1,7 @@
 # HapticGenerator
 Easy peasy haptic generation in iOS.
 
-[![CI Status](http://img.shields.io/travis/kanecheshire/HapticGenerator.svg?style=flat)](https://travis-ci.org/kanecheshire/HapticGenerator)
+[![CI Status](http://img.shields.io/travis/KaneCheshire/HapticGenerator.svg?style=flat)](https://travis-ci.org/kanecheshire/HapticGenerator)
 [![Version](https://img.shields.io/cocoapods/v/HapticGenerator.svg?style=flat)](http://cocoapods.org/pods/HapticGenerator)
 [![License](https://img.shields.io/cocoapods/l/HapticGenerator.svg?style=flat)](http://cocoapods.org/pods/HapticGenerator)
 [![Platform](https://img.shields.io/cocoapods/p/HapticGenerator.svg?style=flat)](http://cocoapods.org/pods/HapticGenerator)
