@@ -10,5 +10,5 @@ language: objective-c
 # - gem install cocoapods # Since Travis is not always on latest version
 # - pod install --project-directory=Example
 script:
-- set -o pipefail && xcodebuild test -workspace Example/HapticGenerator.xcworkspace -scheme HapticGenerator-Example -sdk iphonesimulator -destination 'OS=11.0,name=iPhone SE' | xcpretty
+- set -o pipefail && xcodebuild test -workspace Example/HapticGenerator.xcworkspace -scheme HapticGenerator-Example -sdk iphonesimulator -destination 'OS=10.3.1,name=iPhone SE' | xcpretty
 #- pod lib lint
