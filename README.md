@@ -1,7 +1,7 @@
 # HapticGenerator
 Easy peasy haptic generation in iOS.
 
-[![CI Status](http://img.shields.io/travis/KaneCheshire/HapticGenerator.svg?style=flat)](https://travis-ci.org/kanecheshire/HapticGenerator)
+[![CI Status](http://img.shields.io/travis/kanecheshire/HapticGenerator.svg?style=flat)](https://travis-ci.org/kanecheshire/HapticGenerator)
 [![Version](https://img.shields.io/cocoapods/v/HapticGenerator.svg?style=flat)](http://cocoapods.org/pods/HapticGenerator)
 [![License](https://img.shields.io/cocoapods/l/HapticGenerator.svg?style=flat)](http://cocoapods.org/pods/HapticGenerator)
 [![Platform](https://img.shields.io/cocoapods/p/HapticGenerator.svg?style=flat)](http://cocoapods.org/pods/HapticGenerator)
@@ -18,7 +18,14 @@ Or you can just add `HapticGenerator.swift` to your project manually.
 
 ## Usage
 
-Super easy to use. Simply create a new generator like so:
+HapticGenerator 2.0.0 comes with convenience constants so generating haptics is even easier now:
+
+```swift
+HapticGenerator.selection.generateHaptic()
+```
+
+
+Alternatively, if you'd rather create the generators yourself simply create a new generator like so:
 
 ```swift
 let selectionHapticGenerator = HapticGenerator(hapticType: .selection)
@@ -40,7 +47,7 @@ selectionHapticGenerator.prepareForUse()
 
 ## Why use this?
 
-Apple's `UIFeedbackGenerator` subclasses are not difficult to use, but they are messy.
+Apple's `UIFeedbackGenerator` subclasses are not difficult to use, but they _are_ messy.
 
 `HapticGenerator` tidies this up and makes the process of creating different types of haptics on iOS easy and coherent.
 
