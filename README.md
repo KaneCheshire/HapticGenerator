@@ -24,7 +24,6 @@ HapticGenerator 2.0.0 comes with convenience constants so generating haptics is 
 HapticGenerator.selection.generateHaptic()
 ```
 
-
 Alternatively, if you'd rather create the generators yourself simply create a new generator like so:
 
 ```swift
@@ -39,10 +38,18 @@ And then generate a haptic like so:
 selectionHapticGenerator.generateHaptic()
 ```
 
-Optionally, you can tell the system to prepare the engine for (re)use like so:
+Optionally, you can tell the system to prepare the engine for (re)use.
+HapticGenerator has two ways to do this, either after you generate a haptic by setting `prepareForReuse` to `true`:
 
 ```swift
-selectionHapticGenerator.prepareForUse()
+HapticGenerator.selection.generateHaptic(prepareForReuse: true)
+```
+
+Or if you know in advance before generating a haptic that you'll need to use it soon (after a screen appears for example),
+then you can `prepareForUse` manually:
+
+```swift
+HapticGenerator.selection.prepareForUse()
 ```
 
 ## Why use this?

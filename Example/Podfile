@@ -5,7 +5,5 @@ target 'HapticGenerator_Example' do
 
   target 'HapticGenerator_ExampleTests' do
     inherit! :complete
-
-    
   end
 end

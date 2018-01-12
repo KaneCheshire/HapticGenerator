@@ -91,7 +91,7 @@ public struct HapticGenerator {
     ///
     /// - SeeAlso prepareForUse()
     ///
-    /// - Parameter prepareForReuse: If set to `true`, HapticGenerator will attempt to keep the taptic engine powered up for a few seconds, making it more responsive.
+    /// - Parameter prepareForReuse: If set to `true`, HapticGenerator will attempt to keep the taptic engine powered up for a few seconds, making it more responsive. Defaults to `false`.
     public func generateHaptic(prepareForReuse: Bool = false) {
         if #available(iOS 10.0, *) {
             switch hapticType {
