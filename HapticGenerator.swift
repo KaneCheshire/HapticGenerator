@@ -7,25 +7,24 @@ import UIKit
 /// Generates haptics on supported devices.
 /// On devices that don't support haptics, the generator silently fails,
 /// so you don't need to check for compatibility or OS version.
-public struct HapticGenerator {
+public struct Haptic {
     
     // Convenience for getting a selection haptic generator
-    public static let selection = HapticGenerator(hapticType: .selection)
+    public static let selection = Haptic(type: .selection)
     
     // Convenience for getting a light impact haptic generator
-    public static let impactLight = HapticGenerator(hapticType: .impact(.light))
+    public static let impactLight = Haptic(type: .impact(.light))
     // Convenience for getting a medium impact haptic generator
-    public static let impactMedium = HapticGenerator(hapticType: .impact(.medium))
+    public static let impactMedium = Haptic(type: .impact(.medium))
     // Convenience for getting a heavy impact haptic generator
-    public static let impactHeavy = HapticGenerator(hapticType: .impact(.heavy))
+    public static let impactHeavy = Haptic(type: .impact(.heavy))
     
     // Convenience for getting an error haptic generator
-    public static let error = HapticGenerator(hapticType: .notification(.error))
+    public static let error = Haptic(type: .notification(.error))
     // Convenience for getting a warning haptic generator
-    public static let warning = HapticGenerator(hapticType: .notification(.warning))
+    public static let warning = Haptic(type: .notification(.warning))
     // Convenience for getting a success haptic generator
-    public static let success = HapticGenerator(hapticType: .notification(.success))
-    
+    public static let success = Haptic(type: .notification(.success))
     
     /// The type of haptic you want to generate.
     ///
@@ -67,18 +66,23 @@ public struct HapticGenerator {
         case notification(NotificationType)
     }
     
-    internal let hapticType: HapticType
-    private(set) var generator: Any? = nil
+    let type: HapticType
+    internal(set) var generator: Any? = nil
     
     /// Creates a new generator configured with a haptic type.
     ///
     /// - Parameter hapticType: The haptic type this generator is configured with.
-    public init(hapticType: HapticType) {
-        self.hapticType = hapticType
+    public init(type: HapticType) {
+        self.type = type
         if #available(iOS 10.0, *) {
-            switch self.hapticType {
+            switch self.type {
             case .selection: self.generator = UISelectionFeedbackGenerator()
-            case .impact(let type): self.generator = UIImpactFeedbackGenerator(style: UIImpactFeedbackStyle(rawValue: type.rawValue)!)
+            case .impact(let type):
+                guard let impactFeedbackStyle = UIImpactFeedbackStyle(rawValue: type.rawValue) else {
+                    assertionFailure("Unable to create Apple's feedback style from raw value")
+                    return
+                }
+                self.generator = UIImpactFeedbackGenerator(style: impactFeedbackStyle)
             case .notification: self.generator = UINotificationFeedbackGenerator()
             }
         }
@@ -92,9 +96,9 @@ public struct HapticGenerator {
     /// - SeeAlso prepareForUse()
     ///
     /// - Parameter prepareForReuse: If set to `true`, HapticGenerator will attempt to keep the taptic engine powered up for a few seconds, making it more responsive. Defaults to `false`.
-    public func generateHaptic(prepareForReuse: Bool = false) {
+    public func generate(prepareForReuse: Bool = false) {
         if #available(iOS 10.0, *) {
-            switch hapticType {
+            switch type {
             case .selection: (generator as? UISelectionFeedbackGenerator)?.selectionChanged()
             case .impact: (generator as? UIImpactFeedbackGenerator)?.impactOccurred()
             case .notification(let type): (generator as? UINotificationFeedbackGenerator)?.notificationOccurred(UINotificationFeedbackType(rawValue: type.rawValue)!)
@@ -110,6 +114,8 @@ public struct HapticGenerator {
     /// a few seconds to reduce latency. Useful when scrolling through a list or timeline.
     ///
     /// It is safe to call this function on any version of iOS without checking availability.
+    ///
+    /// - SeeAlso generate(prepareForReuse: Bool)
     public func prepareForUse() {
         if #available(iOS 10.0, *) {
             (generator as? UIFeedbackGenerator)?.prepare()
