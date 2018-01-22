@@ -8,12 +8,12 @@
 
 Pod::Spec.new do |s|
   s.name             = 'HapticGenerator'
-  s.version          = '2.1.0'
+  s.version          = '3.0.0'
   s.summary          = 'Seriously simple haptic generation on iOS.'
   s.description      = <<-DESC
   Apple's UIFeedbackGenerator subclasses are not difficult to use, but they are messy.
   HapticGenerator tidies everything and makes the process of creating different types of haptics on iOS easy and coherent.
-  HapticGenerator now comes with convenience constants for all haptics making it even easier, plus the ability to keep the taptic engine powered up after each use automatically. 
+  HapticGenerator now comes with convenience constants for all haptics making it even easier, plus the ability to keep the taptic engine powered up after each use automatically.
                        DESC
   s.homepage         = 'https://github.com/kanecheshire/HapticGenerator'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
