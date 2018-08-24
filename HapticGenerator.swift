@@ -8,7 +8,12 @@ import AudioToolbox
 /// Generates haptics on supported devices.
 /// On devices that don't support haptics, the generator silently fails,
 /// so you don't need to check for compatibility or OS version.
+///
+// MARK: - A struct that encapsulates haptic feedback generation -
 public struct Haptic {
+    
+    // MARK: - Properties -
+    // MARK: Static
     
     // Convenience for getting a selection haptic generator
     public static let selection = Haptic(type: .selection)
@@ -26,6 +31,14 @@ public struct Haptic {
     public static let warning = Haptic(type: .notification(.warning))
     // Convenience for getting a success haptic generator
     public static let success = Haptic(type: .notification(.success))
+    
+    // MARK: Internal
+    
+    let type: HapticType
+    internal(set) var generator: Any? = nil
+    
+    // MARK: - Enums -
+    // MARK: Public
     
     /// The type of haptic you want to generate.
     ///
@@ -67,6 +80,9 @@ public struct Haptic {
         case notification(NotificationType)
     }
     
+    // MARK: - Structs -
+    // MARK: Private
+    
     /// A struct that represents the types of haptic feedback (iPhone 6S/6S Plus only)
     ///
     /// - selectionOrSuccess: A feedback on selection or success notification
@@ -81,8 +97,8 @@ public struct Haptic {
         static let success = SystemSoundID(4095)
     }
     
-    let type: HapticType
-    internal(set) var generator: Any? = nil
+    // MARK: - Init -
+    // MARK: Public
     
     /// Creates a new generator configured with a haptic type.
     ///
@@ -102,6 +118,9 @@ public struct Haptic {
             }
         }
     }
+    
+    // MARK: - Methods -
+    // MARK: Public
     
     /// Generates a haptic.
     /// The type of haptic generates will be determined by the configuration at creation time.
@@ -207,7 +226,6 @@ extension Haptic {
             return .unsupported
         }
     }
-    
     
     /// Checks whether the user's device has the Taptic Engine
     ///
