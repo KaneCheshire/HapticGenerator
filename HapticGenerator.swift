@@ -131,7 +131,7 @@ public struct Haptic {
     ///
     /// - Parameter prepareForReuse: If set to `true`, HapticGenerator will attempt to keep the taptic engine powered up for a few seconds, making it more responsive. Defaults to `false`.
     public func generate(prepareForReuse: Bool = false) {
-        if #available(iOS 10.0, *), hasTapticEngine() {
+        if #available(iOS 10.0, *), hasNewerTapticEngine() {
             switch type {
             case .selection: (generator as? UISelectionFeedbackGenerator)?.selectionChanged()
             case .impact: (generator as? UIImpactFeedbackGenerator)?.impactOccurred()
@@ -140,7 +140,7 @@ public struct Haptic {
             if prepareForReuse {
                 prepareForUse()
             }
-        } else if hasHapticEngine() {
+        } else if hasOlderTapticEngine() {
             switch type {
             case .selection: AudioServicesPlaySystemSound(HapticFeedbackIdentifier.selection)
             case .impact: AudioServicesPlaySystemSound(HapticFeedbackIdentifier.impact)
@@ -227,24 +227,21 @@ extension Haptic {
         }
     }
     
-    /// Checks whether the user's device has the Taptic Engine
+    /// Checks whether the user's device has the newer Taptic Engine
     ///
-    /// - Returns: `true` if the user's device has the Taptic Engine, `false` otherwise
-    internal func hasTapticEngine() -> Bool {
-        let supportedDevices = [Device.iPhone7, .iPhone7Plus, .iPhone8, .iPhone8Plus, .iPhoneX]
+    /// - Returns: `true` if the user's device has the newer Taptic Engine, `false` otherwise
+    internal func hasNewerTapticEngine() -> Bool {
+        let newDevices = [Device.iPhone7, .iPhone7Plus, .iPhone8, .iPhone8Plus, .iPhoneX]
         let currentDevice = getCurrentDevice()
-        return supportedDevices.contains(currentDevice)
+        return newDevices.contains(currentDevice)
     }
     
-    /// Checks whether the user's device has the Haptic Engine
+    /// Checks whether the user's device has the older Taptic Engine
     ///
-    /// The devices that have a Taptic Engine can also create Haptic feedback, but we ignore those
-    /// devices because we want to use the Taptic Engine on those devices.
-    ///
-    /// - Returns: `true` if the user's device has the Haptic Engine, `false` otherwise
-    internal func hasHapticEngine() -> Bool {
-        let supportedDevices = [Device.iPhone6S, .iPhone6SPlus]
+    /// - Returns: `true` if the user's device has the older Taptic Engine, `false` otherwise
+    internal func hasOlderTapticEngine() -> Bool {
+        let oldDevices = [Device.iPhone6S, .iPhone6SPlus]
         let currentDevice = getCurrentDevice()
-        return supportedDevices.contains(currentDevice)
+        return oldDevices.contains(currentDevice)
     }
 }
