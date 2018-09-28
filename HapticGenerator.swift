@@ -67,24 +67,23 @@ public struct Haptic {
     }
     
     let type: HapticType
-    internal(set) var generator: Any? = nil
+    private(set) var generator: Any? = nil
     
     /// Creates a new generator configured with a haptic type.
     ///
     /// - Parameter hapticType: The haptic type this generator is configured with.
     public init(type: HapticType) {
         self.type = type
-        if #available(iOS 10.0, *) {
-            switch self.type {
-            case .selection: self.generator = UISelectionFeedbackGenerator()
-            case .impact(let type):
-                guard let impactFeedbackStyle = UIImpactFeedbackStyle(rawValue: type.rawValue) else {
-                    assertionFailure("Unable to create Apple's feedback style from raw value")
-                    return
-                }
-                self.generator = UIImpactFeedbackGenerator(style: impactFeedbackStyle)
-            case .notification: self.generator = UINotificationFeedbackGenerator()
+        guard #available(iOS 10.0, *) else { return }
+        switch self.type {
+        case .selection: generator = UISelectionFeedbackGenerator()
+        case .impact(let type):
+            guard let impactFeedbackStyle = UIImpactFeedbackStyle(rawValue: type.rawValue) else {
+                assertionFailure("Unable to create Apple's feedback style from raw value")
+                return
             }
+            generator = UIImpactFeedbackGenerator(style: impactFeedbackStyle)
+        case .notification: generator = UINotificationFeedbackGenerator()
         }
     }
     
@@ -97,15 +96,19 @@ public struct Haptic {
     ///
     /// - Parameter prepareForReuse: If set to `true`, HapticGenerator will attempt to keep the taptic engine powered up for a few seconds, making it more responsive. Defaults to `false`.
     public func generate(prepareForReuse: Bool = false) {
-        if #available(iOS 10.0, *) {
-            switch type {
-            case .selection: (generator as? UISelectionFeedbackGenerator)?.selectionChanged()
-            case .impact: (generator as? UIImpactFeedbackGenerator)?.impactOccurred()
-            case .notification(let type): (generator as? UINotificationFeedbackGenerator)?.notificationOccurred(UINotificationFeedbackType(rawValue: type.rawValue)!)
+        guard #available(iOS 10.0, *) else { return }
+        switch type {
+        case .selection: (generator as? UISelectionFeedbackGenerator)?.selectionChanged()
+        case .impact: (generator as? UIImpactFeedbackGenerator)?.impactOccurred()
+        case .notification(let type):
+            guard let notificationFeedbackType = UINotificationFeedbackType(rawValue: type.rawValue) else {
+                assertionFailure("Unable to create Apple's feedback type from raw value")
+                return
             }
-            if prepareForReuse {
-                prepareForUse()
-            }
+            (generator as? UINotificationFeedbackGenerator)?.notificationOccurred(notificationFeedbackType)
+        }
+        if prepareForReuse {
+            prepareForUse()
         }
     }
     
@@ -117,9 +120,8 @@ public struct Haptic {
     ///
     /// - SeeAlso generate(prepareForReuse: Bool)
     public func prepareForUse() {
-        if #available(iOS 10.0, *) {
-            (generator as? UIFeedbackGenerator)?.prepare()
-        }
+        guard #available(iOS 10.0, *) else { return }
+        (generator as? UIFeedbackGenerator)?.prepare()
     }
     
 }
