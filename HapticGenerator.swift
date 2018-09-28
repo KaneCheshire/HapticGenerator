@@ -10,21 +10,21 @@ import UIKit
 public struct Haptic {
     
     // Convenience for getting a selection haptic generator
-    public static let selection = Haptic(type: .selection)
+    public static let selection = Haptic(.selection)
     
     // Convenience for getting a light impact haptic generator
-    public static let impactLight = Haptic(type: .impact(.light))
+    public static let impactLight = Haptic(.impact(.light))
     // Convenience for getting a medium impact haptic generator
-    public static let impactMedium = Haptic(type: .impact(.medium))
+    public static let impactMedium = Haptic(.impact(.medium))
     // Convenience for getting a heavy impact haptic generator
-    public static let impactHeavy = Haptic(type: .impact(.heavy))
+    public static let impactHeavy = Haptic(.impact(.heavy))
     
     // Convenience for getting an error haptic generator
-    public static let error = Haptic(type: .notification(.error))
+    public static let error = Haptic(.notification(.error))
     // Convenience for getting a warning haptic generator
-    public static let warning = Haptic(type: .notification(.warning))
+    public static let warning = Haptic(.notification(.warning))
     // Convenience for getting a success haptic generator
-    public static let success = Haptic(type: .notification(.success))
+    public static let success = Haptic(.notification(.success))
     
     /// The type of haptic you want to generate.
     ///
@@ -72,7 +72,7 @@ public struct Haptic {
     /// Creates a new generator configured with a haptic type.
     ///
     /// - Parameter hapticType: The haptic type this generator is configured with.
-    public init(type: HapticType) {
+    public init(_ type: HapticType) {
         self.type = type
         guard #available(iOS 10.0, *) else { return }
         switch self.type {
