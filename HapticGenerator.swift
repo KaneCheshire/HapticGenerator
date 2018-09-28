@@ -78,7 +78,7 @@ public struct Haptic {
         switch self.type {
         case .selection: generator = UISelectionFeedbackGenerator()
         case .impact(let type):
-            guard let impactFeedbackStyle = UIImpactFeedbackStyle(rawValue: type.rawValue) else {
+            guard let impactFeedbackStyle = UIImpactFeedbackGenerator.FeedbackStyle(rawValue: type.rawValue) else {
                 assertionFailure("Unable to create Apple's feedback style from raw value")
                 return
             }
@@ -101,7 +101,7 @@ public struct Haptic {
         case .selection: (generator as? UISelectionFeedbackGenerator)?.selectionChanged()
         case .impact: (generator as? UIImpactFeedbackGenerator)?.impactOccurred()
         case .notification(let type):
-            guard let notificationFeedbackType = UINotificationFeedbackType(rawValue: type.rawValue) else {
+            guard let notificationFeedbackType = UINotificationFeedbackGenerator.FeedbackType(rawValue: type.rawValue) else {
                 assertionFailure("Unable to create Apple's feedback type from raw value")
                 return
             }
