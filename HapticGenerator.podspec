@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'HapticGenerator'
-  s.version          = '3.0.0'
+  s.version          = '4.0.0'
   s.summary          = 'Seriously simple haptic generation on iOS.'
   s.description      = <<-DESC
   Apple's UIFeedbackGenerator subclasses are not difficult to use, but they are messy.
