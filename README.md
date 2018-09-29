@@ -47,9 +47,9 @@ Haptic.selection.generate()
 Alternatively, if you'd rather create the generators yourself simply create a new generator like so:
 
 ```swift
-let selection = Haptic(type: .selection)
-let lightImpact = Haptic(type: .impact(.light))
-let warning = Haptic(type: .notification(.warning))
+let selection = Haptic(.selection)
+let lightImpact = Haptic(.impact(.light))
+let warning = Haptic(.notification(.warning))
 ```
 
 And then generate a haptic like so:

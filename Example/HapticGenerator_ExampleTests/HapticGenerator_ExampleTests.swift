@@ -70,31 +70,31 @@ class Tests: XCTestCase {
 extension Tests {
     
     var selectionGenerator: Haptic {
-        return Haptic(type: .selection)
+        return Haptic(.selection)
     }
     
     var lightImpactGenerator: Haptic {
-        return Haptic(type: .impact(.light))
+        return Haptic(.impact(.light))
     }
     
     var mediumImpactGenerator: Haptic {
-        return Haptic(type: .impact(.medium))
+        return Haptic(.impact(.medium))
     }
     
     var heavyImpactGenerator: Haptic {
-        return Haptic(type: .impact(.heavy))
+        return Haptic(.impact(.heavy))
     }
     
     var successNotificationGenerator: Haptic {
-        return Haptic(type: .notification(.success))
+        return Haptic(.notification(.success))
     }
     
     var warningNotificationGenerator: Haptic {
-        return Haptic(type: .notification(.warning))
+        return Haptic(.notification(.warning))
     }
     
     var errorNotificationGenerator: Haptic {
-        return Haptic(type: .notification(.error))
+        return Haptic(.notification(.error))
     }
     
 }
