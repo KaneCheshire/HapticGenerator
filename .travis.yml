@@ -8,4 +8,4 @@ podfile: Example/Podfile
 before_install:
 - pod install --project-directory=Example
 script:
-- set -o pipefail && xcodebuild test -workspace Example/HapticGenerator.xcworkspace -scheme HapticGenerator-Example -sdk iphonesimulator -destination 'OS=12,name=iPhone Xs' | xcpretty
+- set -o pipefail && xcodebuild test -workspace Example/HapticGenerator.xcworkspace -scheme HapticGenerator-Example -sdk iphonesimulator -destination 'OS=12.0,name=iPhone 5s' | xcpretty
