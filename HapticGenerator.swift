@@ -78,7 +78,7 @@ public struct Haptic {
     /// - Parameter hapticType: The haptic type this generator is configured with.
     public init(_ type: HapticType) {
         self.type = type
-        guard isEnabled, #available(iOS 10.0, *) else { return }
+        guard Haptic.isEnabled, #available(iOS 10.0, *) else { return }
         switch self.type {
         case .selection: generator = UISelectionFeedbackGenerator()
         case .impact(let type):
@@ -100,7 +100,7 @@ public struct Haptic {
     ///
     /// - Parameter prepareForReuse: If set to `true`, HapticGenerator will attempt to keep the taptic engine powered up for a few seconds, making it more responsive. Defaults to `false`.
     public func generate(prepareForReuse: Bool = false) {
-        guard isEnabled, #available(iOS 10.0, *) else { return }
+        guard Haptic.isEnabled, #available(iOS 10.0, *) else { return }
         switch type {
         case .selection: (generator as? UISelectionFeedbackGenerator)?.selectionChanged()
         case .impact: (generator as? UIImpactFeedbackGenerator)?.impactOccurred()
@@ -124,7 +124,7 @@ public struct Haptic {
     ///
     /// - SeeAlso generate(prepareForReuse: Bool)
     public func prepareForUse() {
-        guard isEnabled, #available(iOS 10.0, *) else { return }
+        guard Haptic.isEnabled, #available(iOS 10.0, *) else { return }
         (generator as? UIFeedbackGenerator)?.prepare()
     }
     
