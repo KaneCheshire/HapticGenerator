@@ -72,7 +72,7 @@ then you can `prepareForUse` manually:
 Haptic.selection.prepareForUse()
 ```
 
-**Note:** Haptics should only be generated and prepared for reuse on the main thread.
+> **Note:** Haptics should only be generated and prepared for reuse on the main thread.
 
 ## Why use this?
 
