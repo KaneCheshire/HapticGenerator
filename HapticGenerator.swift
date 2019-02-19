@@ -3,6 +3,7 @@
 //  Created by Kane Cheshire on 16/12/2016.
 //
 import UIKit
+import Foundation
 
 /// Generates haptics on supported devices.
 /// On devices that don't support haptics, the generator silently fails,
@@ -92,10 +93,17 @@ public struct Haptic {
     ///
     /// It is safe to call this function on any version of iOS without checking availability.
     ///
+    /// It is only safe to call this function on the main thread. If it is called on any
+    /// other thread, an `assertionFailure` will be called.
+    ///
     /// - SeeAlso prepareForUse()
     ///
     /// - Parameter prepareForReuse: If set to `true`, HapticGenerator will attempt to keep the taptic engine powered up for a few seconds, making it more responsive. Defaults to `false`.
     public func generate(prepareForReuse: Bool = false) {
+        guard Thread.isMainThread else {
+            assertionFailure("Haptics should be generated on the main thread")
+            return
+        }
         guard #available(iOS 10.0, *) else { return }
         switch type {
         case .selection: (generator as? UISelectionFeedbackGenerator)?.selectionChanged()
@@ -118,8 +126,15 @@ public struct Haptic {
     ///
     /// It is safe to call this function on any version of iOS without checking availability.
     ///
+    /// It is only safe to call this function on the main thread. If it is called on any
+    /// other thread, an `assertionFailure` will be called.
+    ///
     /// - SeeAlso generate(prepareForReuse: Bool)
     public func prepareForUse() {
+        guard Thread.isMainThread else {
+            assertionFailure("Haptics should be prepared for reuse on the main thread")
+            return
+        }
         guard #available(iOS 10.0, *) else { return }
         (generator as? UIFeedbackGenerator)?.prepare()
     }
