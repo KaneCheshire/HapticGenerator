@@ -3,7 +3,7 @@
 # * https://github.com/supermarin/xcpretty#usage
 
 osx_image: xcode11.4
-language: objective-c
+language: swift
 podfile: Example/Podfile
 before_install:
 - pod install --project-directory=Example
