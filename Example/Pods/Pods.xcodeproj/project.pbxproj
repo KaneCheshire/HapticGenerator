@@ -7,267 +7,300 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1B2BBC15512092A1292127E9F6A042BE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		3FEEA5D20477AD49A00E4E5A003DCFD9 /* Pods-HapticGenerator_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A919602CBA5EEF470244406E519C9EC /* Pods-HapticGenerator_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6C7EEEB7B4F3F25BE5055CAEA6C03EFD /* Pods-HapticGenerator_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C0313F2592684E927BF6B4E85D08E534 /* Pods-HapticGenerator_Example-dummy.m */; };
-		7FEA33D58286A89D6A7D5C19A9DE84E1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		9724C4168DE1542EB8ABB50B89AF254D /* HapticGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A597080FDB1EF3C6812E1F8D07750D1D /* HapticGenerator.swift */; };
-		A43CCD1A7FEBD26022B9171677FCC61A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		A990201794FFE511BB5A18458D45FBDF /* Pods-HapticGenerator_Example-HapticGenerator_ExampleTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E723C8CEE8B40FA3A222C7D9DDA7C7A9 /* Pods-HapticGenerator_Example-HapticGenerator_ExampleTests-dummy.m */; };
-		B5FC631B03363B5AFEC815933A73B092 /* Pods-HapticGenerator_Example-HapticGenerator_ExampleTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B7D8BE4E1296CD7EBA4FA008FDCEE77B /* Pods-HapticGenerator_Example-HapticGenerator_ExampleTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C947A80CD63327B14D754AAB4335BFF3 /* HapticGenerator-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F1B4CAEE7BAC02AA6D3F9261D8D3BF0 /* HapticGenerator-dummy.m */; };
-		D48B2974DB0E7943675DF2CB1ADF017E /* HapticGenerator-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 05D4D12FAB44CA0711FD2D2D648CF0AA /* HapticGenerator-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		06D0FC83FBFFF7C420681E914B76432F /* HapticGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E3FD79DEB3B8B14019E587E85E16CC /* HapticGenerator.swift */; };
+		1DA6C4283EA173C315150BE72C053B51 /* Pods-HapticGenerator_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F677F7B05F2C245CCD4AA3624863B14 /* Pods-HapticGenerator_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BA49BE8C78E0991E87AAF4FE294D6E8 /* Pods-HapticGenerator_Example-HapticGenerator_ExampleTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B732568781E91574C556CD7774D549BB /* Pods-HapticGenerator_Example-HapticGenerator_ExampleTests-dummy.m */; };
+		6ED816B4DB56F68FF258FA49B1FB9D91 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		8EB9F280020EDD85A2A0A601324352F7 /* Pods-HapticGenerator_Example-HapticGenerator_ExampleTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E58B967109D3D828C05927634EDA3921 /* Pods-HapticGenerator_Example-HapticGenerator_ExampleTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A91A3DA9EB09AECC67F18A7561132FCF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		AAE13BA555C491336435B447D3C15881 /* HapticGenerator-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3EE117B6B307C90268A21E1274CCF43F /* HapticGenerator-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B09B8B2FEB6761E2EE897D6EB3559C51 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		BFF162AF6DE6D50872F94DBEBCA2DE4C /* HapticGenerator-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DF243D4FDC2D7F3272E7FC9D8E7D349 /* HapticGenerator-dummy.m */; };
+		DF2D4BD95736ED19DDC0375D91275362 /* Pods-HapticGenerator_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E299A1235CCD06906EE5FA3789D7FEFB /* Pods-HapticGenerator_Example-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		8004B2DD807A96FB48FC85EC6D2CE708 /* PBXContainerItemProxy */ = {
+		08B107A6CB733CE845384187AC53D0DB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = ADEF9D39441057203023056F7B95656D;
+			remoteGlobalIDString = E25E9199DA8CA76DCCCA41120AC94711;
 			remoteInfo = HapticGenerator;
 		};
-		9651435036F1300BD6065FF1C2381B07 /* PBXContainerItemProxy */ = {
+		57F808BBB4B3EE6418537AE023936AE9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = ADEF9D39441057203023056F7B95656D;
+			remoteGlobalIDString = E25E9199DA8CA76DCCCA41120AC94711;
 			remoteInfo = HapticGenerator;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		05D4D12FAB44CA0711FD2D2D648CF0AA /* HapticGenerator-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HapticGenerator-umbrella.h"; sourceTree = "<group>"; };
-		0F146D0B425B54C7ECA5A3DCF46B9156 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1234D3FFB5A0CB183D4737D1A628FAE2 /* Pods-HapticGenerator_Example-HapticGenerator_ExampleTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-HapticGenerator_Example-HapticGenerator_ExampleTests.modulemap"; sourceTree = "<group>"; };
-		14C39E35322AC8B8DEF03E7402521673 /* Pods-HapticGenerator_Example-HapticGenerator_ExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HapticGenerator_Example-HapticGenerator_ExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
-		22BD949B29D40326D27F3F6CC195C50A /* HapticGenerator.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = HapticGenerator.modulemap; sourceTree = "<group>"; };
-		2D41D1F1BECE664FCFA7554BA32DB075 /* Pods-HapticGenerator_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-HapticGenerator_Example.modulemap"; sourceTree = "<group>"; };
-		36A5F82F0FF946FE8C1E8C6F2C084CFD /* Pods-HapticGenerator_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HapticGenerator_Example.release.xcconfig"; sourceTree = "<group>"; };
-		53E264177B1D9CE26539F55F56D63C71 /* HapticGenerator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HapticGenerator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5BF1AEAAE0B194656D254FB4EB83D08D /* Pods-HapticGenerator_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HapticGenerator_Example-resources.sh"; sourceTree = "<group>"; };
-		5F1B4CAEE7BAC02AA6D3F9261D8D3BF0 /* HapticGenerator-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HapticGenerator-dummy.m"; sourceTree = "<group>"; };
-		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		838F894F9583061BDAAD48275FF79B3C /* Pods-HapticGenerator_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HapticGenerator_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		86577CEF6E4DE7A4FB0ACB26303FF2DE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		88FAD992FF6FE4432033BCE07F157F2D /* Pods-HapticGenerator_Example-HapticGenerator_ExampleTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HapticGenerator_Example-HapticGenerator_ExampleTests-frameworks.sh"; sourceTree = "<group>"; };
-		91DBA22D3E710DA1DD9EB099F8722084 /* HapticGenerator-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HapticGenerator-prefix.pch"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		96EC60FBBEF36C8972347FB52822F1C7 /* Pods-HapticGenerator_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HapticGenerator_Example-frameworks.sh"; sourceTree = "<group>"; };
-		9A919602CBA5EEF470244406E519C9EC /* Pods-HapticGenerator_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HapticGenerator_Example-umbrella.h"; sourceTree = "<group>"; };
-		A597080FDB1EF3C6812E1F8D07750D1D /* HapticGenerator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HapticGenerator.swift; sourceTree = "<group>"; };
-		AD47165B6F18FCF4CD65A3F6D75BE670 /* Pods_HapticGenerator_Example_HapticGenerator_ExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HapticGenerator_Example_HapticGenerator_ExampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B7D8BE4E1296CD7EBA4FA008FDCEE77B /* Pods-HapticGenerator_Example-HapticGenerator_ExampleTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HapticGenerator_Example-HapticGenerator_ExampleTests-umbrella.h"; sourceTree = "<group>"; };
-		C0313F2592684E927BF6B4E85D08E534 /* Pods-HapticGenerator_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HapticGenerator_Example-dummy.m"; sourceTree = "<group>"; };
-		C4D35E57479A3D724DAC5020E141236D /* Pods-HapticGenerator_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HapticGenerator_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		D12EDB86AC37DD9DBFE575E2F9573528 /* Pods-HapticGenerator_Example-HapticGenerator_ExampleTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HapticGenerator_Example-HapticGenerator_ExampleTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		D93C9C6711E40D629A3963DCD01603E7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DCD7CF3077E2DB59433975E16A2133E8 /* Pods_HapticGenerator_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HapticGenerator_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E4BD324D637AF4EA9CBE1A105FA336F5 /* Pods-HapticGenerator_Example-HapticGenerator_ExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HapticGenerator_Example-HapticGenerator_ExampleTests.release.xcconfig"; sourceTree = "<group>"; };
-		E723C8CEE8B40FA3A222C7D9DDA7C7A9 /* Pods-HapticGenerator_Example-HapticGenerator_ExampleTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HapticGenerator_Example-HapticGenerator_ExampleTests-dummy.m"; sourceTree = "<group>"; };
-		E89C1AA2F968F319F240A1D4ED1C81F4 /* Pods-HapticGenerator_Example-HapticGenerator_ExampleTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HapticGenerator_Example-HapticGenerator_ExampleTests-resources.sh"; sourceTree = "<group>"; };
-		F422995AF34D6D9F71F39E779CE1B6A8 /* HapticGenerator.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HapticGenerator.xcconfig; sourceTree = "<group>"; };
-		FC1A91B08BA438F2E23F189643670423 /* Pods-HapticGenerator_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HapticGenerator_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		FC5F414C706A50B336B1D36B7C13CB3B /* Pods-HapticGenerator_Example-HapticGenerator_ExampleTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HapticGenerator_Example-HapticGenerator_ExampleTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		174555B97E6F483D54ABFA695E049DD2 /* Pods-HapticGenerator_Example-HapticGenerator_ExampleTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-HapticGenerator_Example-HapticGenerator_ExampleTests.modulemap"; sourceTree = "<group>"; };
+		2101E076078FB1635163E385F2AB47E3 /* Pods-HapticGenerator_Example-HapticGenerator_ExampleTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HapticGenerator_Example-HapticGenerator_ExampleTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		354D95D9FF4F2D27AD2759FA8AD17E75 /* HapticGenerator.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = HapticGenerator.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		3EE117B6B307C90268A21E1274CCF43F /* HapticGenerator-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HapticGenerator-umbrella.h"; sourceTree = "<group>"; };
+		44E3FD79DEB3B8B14019E587E85E16CC /* HapticGenerator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HapticGenerator.swift; path = Sources/HapticGenerator.swift; sourceTree = "<group>"; };
+		46AC438A8B357B7F9109E40F953D216B /* Pods-HapticGenerator_Example-HapticGenerator_ExampleTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HapticGenerator_Example-HapticGenerator_ExampleTests-frameworks.sh"; sourceTree = "<group>"; };
+		4777D13DB09136757D5012FE1E810533 /* Pods-HapticGenerator_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HapticGenerator_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		4DF243D4FDC2D7F3272E7FC9D8E7D349 /* HapticGenerator-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HapticGenerator-dummy.m"; sourceTree = "<group>"; };
+		58567B46CA10E41CB221877C0F33DF9C /* Pods-HapticGenerator_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HapticGenerator_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		5F677F7B05F2C245CCD4AA3624863B14 /* Pods-HapticGenerator_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HapticGenerator_Example-umbrella.h"; sourceTree = "<group>"; };
+		5FEDEB98C564E46300C46139A5CAD816 /* Pods-HapticGenerator_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HapticGenerator_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		712FD5F4D0BF1898105966F0B631267E /* HapticGenerator-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HapticGenerator-prefix.pch"; sourceTree = "<group>"; };
+		79E618056FBF02149740D81C6643383E /* Pods-HapticGenerator_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-HapticGenerator_Example.modulemap"; sourceTree = "<group>"; };
+		844D02D9B95B838811116D44982DC0A2 /* Pods-HapticGenerator_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HapticGenerator_Example-frameworks.sh"; sourceTree = "<group>"; };
+		8DCD153E3EE5A5011666A6D7769FA921 /* Pods-HapticGenerator_Example-HapticGenerator_ExampleTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HapticGenerator_Example-HapticGenerator_ExampleTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A379B835B02FDC9302EE231CCCFB8BE7 /* Pods-HapticGenerator_Example-HapticGenerator_ExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HapticGenerator_Example-HapticGenerator_ExampleTests.release.xcconfig"; sourceTree = "<group>"; };
+		A4F189D1706A4A2A1AB8FE8C02D54D0F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		B732568781E91574C556CD7774D549BB /* Pods-HapticGenerator_Example-HapticGenerator_ExampleTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HapticGenerator_Example-HapticGenerator_ExampleTests-dummy.m"; sourceTree = "<group>"; };
+		BBF4A07FA2B6651412AC048DC417C6CB /* HapticGenerator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HapticGenerator.debug.xcconfig; sourceTree = "<group>"; };
+		C2B71AFBDD7C9E6811E30FEE285680BF /* Pods_HapticGenerator_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HapticGenerator_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8E44BA7A19E000266C279FA05656A4B /* Pods_HapticGenerator_Example_HapticGenerator_ExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HapticGenerator_Example_HapticGenerator_ExampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9B125E395BBEDF2CC11A72FA26E0F81 /* Pods-HapticGenerator_Example-HapticGenerator_ExampleTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HapticGenerator_Example-HapticGenerator_ExampleTests-Info.plist"; sourceTree = "<group>"; };
+		CC983BA8D5187E584F39BDA1CC65867A /* HapticGenerator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HapticGenerator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D21D595FE0ED5D1565651AAE7F62C19D /* HapticGenerator.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = HapticGenerator.modulemap; sourceTree = "<group>"; };
+		D9689344850818FFD262D4687BEF85AB /* HapticGenerator-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "HapticGenerator-Info.plist"; sourceTree = "<group>"; };
+		DBD49F2BA70E30EE3B25550EE5279422 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		DF44FF3B97A1CAC949C8995F9C9E4D7F /* Pods-HapticGenerator_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HapticGenerator_Example.release.xcconfig"; sourceTree = "<group>"; };
+		E299A1235CCD06906EE5FA3789D7FEFB /* Pods-HapticGenerator_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HapticGenerator_Example-dummy.m"; sourceTree = "<group>"; };
+		E4878179D2A36AE462989E7BCC3C3415 /* HapticGenerator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HapticGenerator.release.xcconfig; sourceTree = "<group>"; };
+		E58B967109D3D828C05927634EDA3921 /* Pods-HapticGenerator_Example-HapticGenerator_ExampleTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HapticGenerator_Example-HapticGenerator_ExampleTests-umbrella.h"; sourceTree = "<group>"; };
+		F19CDCB75E6AF979A225FCE58E5C40FD /* Pods-HapticGenerator_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HapticGenerator_Example-Info.plist"; sourceTree = "<group>"; };
+		FCF9EFF5F2C4F92C269CE221852590B2 /* Pods-HapticGenerator_Example-HapticGenerator_ExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HapticGenerator_Example-HapticGenerator_ExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0C1757358801A8C300ACEACBA30DAFF4 /* Frameworks */ = {
+		4C83390755F97B3BAA3A02026D5DDA71 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1B2BBC15512092A1292127E9F6A042BE /* Foundation.framework in Frameworks */,
+				6ED816B4DB56F68FF258FA49B1FB9D91 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		28979E503CC04BD2496BFE128FB50F35 /* Frameworks */ = {
+		564ED2B14BCC40E0EAAB4B3CC58B23C3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7FEA33D58286A89D6A7D5C19A9DE84E1 /* Foundation.framework in Frameworks */,
+				B09B8B2FEB6761E2EE897D6EB3559C51 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		54319309082756677564E04B14F51A09 /* Frameworks */ = {
+		90F6AC700CA72E3A3A6CA747D3AC5770 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A43CCD1A7FEBD26022B9171677FCC61A /* Foundation.framework in Frameworks */,
+				A91A3DA9EB09AECC67F18A7561132FCF /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		286CDE4F52B4D94962973EEE29C147A6 /* Pods-HapticGenerator_Example */ = {
+		00FED81CE78A1E9359EB5A8629A14511 /* Pods-HapticGenerator_Example-HapticGenerator_ExampleTests */ = {
 			isa = PBXGroup;
 			children = (
-				86577CEF6E4DE7A4FB0ACB26303FF2DE /* Info.plist */,
-				2D41D1F1BECE664FCFA7554BA32DB075 /* Pods-HapticGenerator_Example.modulemap */,
-				838F894F9583061BDAAD48275FF79B3C /* Pods-HapticGenerator_Example-acknowledgements.markdown */,
-				C4D35E57479A3D724DAC5020E141236D /* Pods-HapticGenerator_Example-acknowledgements.plist */,
-				C0313F2592684E927BF6B4E85D08E534 /* Pods-HapticGenerator_Example-dummy.m */,
-				96EC60FBBEF36C8972347FB52822F1C7 /* Pods-HapticGenerator_Example-frameworks.sh */,
-				5BF1AEAAE0B194656D254FB4EB83D08D /* Pods-HapticGenerator_Example-resources.sh */,
-				9A919602CBA5EEF470244406E519C9EC /* Pods-HapticGenerator_Example-umbrella.h */,
-				FC1A91B08BA438F2E23F189643670423 /* Pods-HapticGenerator_Example.debug.xcconfig */,
-				36A5F82F0FF946FE8C1E8C6F2C084CFD /* Pods-HapticGenerator_Example.release.xcconfig */,
-			);
-			name = "Pods-HapticGenerator_Example";
-			path = "Target Support Files/Pods-HapticGenerator_Example";
-			sourceTree = "<group>";
-		};
-		6D790F63B673DE6E9755C964D96E78B7 /* Pods-HapticGenerator_Example-HapticGenerator_ExampleTests */ = {
-			isa = PBXGroup;
-			children = (
-				D93C9C6711E40D629A3963DCD01603E7 /* Info.plist */,
-				1234D3FFB5A0CB183D4737D1A628FAE2 /* Pods-HapticGenerator_Example-HapticGenerator_ExampleTests.modulemap */,
-				D12EDB86AC37DD9DBFE575E2F9573528 /* Pods-HapticGenerator_Example-HapticGenerator_ExampleTests-acknowledgements.markdown */,
-				FC5F414C706A50B336B1D36B7C13CB3B /* Pods-HapticGenerator_Example-HapticGenerator_ExampleTests-acknowledgements.plist */,
-				E723C8CEE8B40FA3A222C7D9DDA7C7A9 /* Pods-HapticGenerator_Example-HapticGenerator_ExampleTests-dummy.m */,
-				88FAD992FF6FE4432033BCE07F157F2D /* Pods-HapticGenerator_Example-HapticGenerator_ExampleTests-frameworks.sh */,
-				E89C1AA2F968F319F240A1D4ED1C81F4 /* Pods-HapticGenerator_Example-HapticGenerator_ExampleTests-resources.sh */,
-				B7D8BE4E1296CD7EBA4FA008FDCEE77B /* Pods-HapticGenerator_Example-HapticGenerator_ExampleTests-umbrella.h */,
-				14C39E35322AC8B8DEF03E7402521673 /* Pods-HapticGenerator_Example-HapticGenerator_ExampleTests.debug.xcconfig */,
-				E4BD324D637AF4EA9CBE1A105FA336F5 /* Pods-HapticGenerator_Example-HapticGenerator_ExampleTests.release.xcconfig */,
+				174555B97E6F483D54ABFA695E049DD2 /* Pods-HapticGenerator_Example-HapticGenerator_ExampleTests.modulemap */,
+				8DCD153E3EE5A5011666A6D7769FA921 /* Pods-HapticGenerator_Example-HapticGenerator_ExampleTests-acknowledgements.markdown */,
+				2101E076078FB1635163E385F2AB47E3 /* Pods-HapticGenerator_Example-HapticGenerator_ExampleTests-acknowledgements.plist */,
+				B732568781E91574C556CD7774D549BB /* Pods-HapticGenerator_Example-HapticGenerator_ExampleTests-dummy.m */,
+				46AC438A8B357B7F9109E40F953D216B /* Pods-HapticGenerator_Example-HapticGenerator_ExampleTests-frameworks.sh */,
+				C9B125E395BBEDF2CC11A72FA26E0F81 /* Pods-HapticGenerator_Example-HapticGenerator_ExampleTests-Info.plist */,
+				E58B967109D3D828C05927634EDA3921 /* Pods-HapticGenerator_Example-HapticGenerator_ExampleTests-umbrella.h */,
+				FCF9EFF5F2C4F92C269CE221852590B2 /* Pods-HapticGenerator_Example-HapticGenerator_ExampleTests.debug.xcconfig */,
+				A379B835B02FDC9302EE231CCCFB8BE7 /* Pods-HapticGenerator_Example-HapticGenerator_ExampleTests.release.xcconfig */,
 			);
 			name = "Pods-HapticGenerator_Example-HapticGenerator_ExampleTests";
 			path = "Target Support Files/Pods-HapticGenerator_Example-HapticGenerator_ExampleTests";
 			sourceTree = "<group>";
 		};
-		7DB346D0F39D3F0E887471402A8071AB = {
+		075FDFAAB2DC92DAAE1FD22B3D40642B /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				AF18D72D866A44E7B740253741DE5426 /* Development Pods */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				F46CD0F68B4EE14DAEF759ADE4C44530 /* Products */,
-				C8FD842AABB84D354AA68B503288EEFC /* Targets Support Files */,
+				354D95D9FF4F2D27AD2759FA8AD17E75 /* HapticGenerator.podspec */,
+				A4F189D1706A4A2A1AB8FE8C02D54D0F /* LICENSE */,
+				DBD49F2BA70E30EE3B25550EE5279422 /* README.md */,
 			);
+			name = Pod;
 			sourceTree = "<group>";
 		};
-		AF18D72D866A44E7B740253741DE5426 /* Development Pods */ = {
+		314E2D45404FFC212F36883DC9FFC293 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				B6C2DFFD1C46B19EA3A31E43C81D7E5A /* HapticGenerator */,
+				446F8E36EC3B4E55942B5337B8EF86DF /* HapticGenerator */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		B6C2DFFD1C46B19EA3A31E43C81D7E5A /* HapticGenerator */ = {
+		39E96B245B10E99E66A72A24AEE4DDF8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A597080FDB1EF3C6812E1F8D07750D1D /* HapticGenerator.swift */,
-				CA379107946C2C44493044825654100A /* Support Files */,
+				CC983BA8D5187E584F39BDA1CC65867A /* HapticGenerator.framework */,
+				C2B71AFBDD7C9E6811E30FEE285680BF /* Pods_HapticGenerator_Example.framework */,
+				C8E44BA7A19E000266C279FA05656A4B /* Pods_HapticGenerator_Example_HapticGenerator_ExampleTests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		446F8E36EC3B4E55942B5337B8EF86DF /* HapticGenerator */ = {
+			isa = PBXGroup;
+			children = (
+				44E3FD79DEB3B8B14019E587E85E16CC /* HapticGenerator.swift */,
+				075FDFAAB2DC92DAAE1FD22B3D40642B /* Pod */,
+				90593F989073DD2F6676A0CBE8DAD5F0 /* Support Files */,
 			);
 			name = HapticGenerator;
 			path = ../..;
 			sourceTree = "<group>";
 		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+		90593F989073DD2F6676A0CBE8DAD5F0 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		C8FD842AABB84D354AA68B503288EEFC /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				286CDE4F52B4D94962973EEE29C147A6 /* Pods-HapticGenerator_Example */,
-				6D790F63B673DE6E9755C964D96E78B7 /* Pods-HapticGenerator_Example-HapticGenerator_ExampleTests */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		CA379107946C2C44493044825654100A /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				22BD949B29D40326D27F3F6CC195C50A /* HapticGenerator.modulemap */,
-				F422995AF34D6D9F71F39E779CE1B6A8 /* HapticGenerator.xcconfig */,
-				5F1B4CAEE7BAC02AA6D3F9261D8D3BF0 /* HapticGenerator-dummy.m */,
-				91DBA22D3E710DA1DD9EB099F8722084 /* HapticGenerator-prefix.pch */,
-				05D4D12FAB44CA0711FD2D2D648CF0AA /* HapticGenerator-umbrella.h */,
-				0F146D0B425B54C7ECA5A3DCF46B9156 /* Info.plist */,
+				D21D595FE0ED5D1565651AAE7F62C19D /* HapticGenerator.modulemap */,
+				4DF243D4FDC2D7F3272E7FC9D8E7D349 /* HapticGenerator-dummy.m */,
+				D9689344850818FFD262D4687BEF85AB /* HapticGenerator-Info.plist */,
+				712FD5F4D0BF1898105966F0B631267E /* HapticGenerator-prefix.pch */,
+				3EE117B6B307C90268A21E1274CCF43F /* HapticGenerator-umbrella.h */,
+				BBF4A07FA2B6651412AC048DC417C6CB /* HapticGenerator.debug.xcconfig */,
+				E4878179D2A36AE462989E7BCC3C3415 /* HapticGenerator.release.xcconfig */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/HapticGenerator";
 			sourceTree = "<group>";
 		};
-		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+		B0AEBD435AAE57587DC5F9DEB34415D8 /* Pods-HapticGenerator_Example */ = {
 			isa = PBXGroup;
 			children = (
-				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+				79E618056FBF02149740D81C6643383E /* Pods-HapticGenerator_Example.modulemap */,
+				4777D13DB09136757D5012FE1E810533 /* Pods-HapticGenerator_Example-acknowledgements.markdown */,
+				5FEDEB98C564E46300C46139A5CAD816 /* Pods-HapticGenerator_Example-acknowledgements.plist */,
+				E299A1235CCD06906EE5FA3789D7FEFB /* Pods-HapticGenerator_Example-dummy.m */,
+				844D02D9B95B838811116D44982DC0A2 /* Pods-HapticGenerator_Example-frameworks.sh */,
+				F19CDCB75E6AF979A225FCE58E5C40FD /* Pods-HapticGenerator_Example-Info.plist */,
+				5F677F7B05F2C245CCD4AA3624863B14 /* Pods-HapticGenerator_Example-umbrella.h */,
+				58567B46CA10E41CB221877C0F33DF9C /* Pods-HapticGenerator_Example.debug.xcconfig */,
+				DF44FF3B97A1CAC949C8995F9C9E4D7F /* Pods-HapticGenerator_Example.release.xcconfig */,
+			);
+			name = "Pods-HapticGenerator_Example";
+			path = "Target Support Files/Pods-HapticGenerator_Example";
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
 			);
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		F46CD0F68B4EE14DAEF759ADE4C44530 /* Products */ = {
+		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
-				53E264177B1D9CE26539F55F56D63C71 /* HapticGenerator.framework */,
-				DCD7CF3077E2DB59433975E16A2133E8 /* Pods_HapticGenerator_Example.framework */,
-				AD47165B6F18FCF4CD65A3F6D75BE670 /* Pods_HapticGenerator_Example_HapticGenerator_ExampleTests.framework */,
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				314E2D45404FFC212F36883DC9FFC293 /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				39E96B245B10E99E66A72A24AEE4DDF8 /* Products */,
+				FD2452BF324EAA5ECEAAAC2C0F7785F7 /* Targets Support Files */,
 			);
-			name = Products;
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FD2452BF324EAA5ECEAAAC2C0F7785F7 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B0AEBD435AAE57587DC5F9DEB34415D8 /* Pods-HapticGenerator_Example */,
+				00FED81CE78A1E9359EB5A8629A14511 /* Pods-HapticGenerator_Example-HapticGenerator_ExampleTests */,
+			);
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		0FE8AA4ABD81D63A53698C5662E1A21F /* Headers */ = {
+		4BB897462728DB21BD5D422767024513 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5FC631B03363B5AFEC815933A73B092 /* Pods-HapticGenerator_Example-HapticGenerator_ExampleTests-umbrella.h in Headers */,
+				1DA6C4283EA173C315150BE72C053B51 /* Pods-HapticGenerator_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		84D00A8B3C1EF474841E4B91DD86F8B1 /* Headers */ = {
+		569C9B12D7874885263239CAC7B40412 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3FEEA5D20477AD49A00E4E5A003DCFD9 /* Pods-HapticGenerator_Example-umbrella.h in Headers */,
+				8EB9F280020EDD85A2A0A601324352F7 /* Pods-HapticGenerator_Example-HapticGenerator_ExampleTests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E35764C931DFB9FA5DAC8F22485904A5 /* Headers */ = {
+		87363D6C7B46A46FA33AF76EB9AC6281 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D48B2974DB0E7943675DF2CB1ADF017E /* HapticGenerator-umbrella.h in Headers */,
+				AAE13BA555C491336435B447D3C15881 /* HapticGenerator-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		9D5D1FAEBEE113AB2588D76B38482774 /* Pods-HapticGenerator_Example */ = {
+		35406887E04277DF290BDD7AD1400BD3 /* Pods-HapticGenerator_Example-HapticGenerator_ExampleTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0DFE346CC15E1EC3E5331CEEAFD838C0 /* Build configuration list for PBXNativeTarget "Pods-HapticGenerator_Example" */;
+			buildConfigurationList = 3707E962F46361B5ED8B73F950AB128B /* Build configuration list for PBXNativeTarget "Pods-HapticGenerator_Example-HapticGenerator_ExampleTests" */;
 			buildPhases = (
-				81D7ACB59428A085485D03066623110D /* Sources */,
-				0C1757358801A8C300ACEACBA30DAFF4 /* Frameworks */,
-				84D00A8B3C1EF474841E4B91DD86F8B1 /* Headers */,
+				569C9B12D7874885263239CAC7B40412 /* Headers */,
+				890DD25EB922669B8B296139398D012C /* Sources */,
+				4C83390755F97B3BAA3A02026D5DDA71 /* Frameworks */,
+				016D88DDF56F67A2B1CE04D3FC40BFD9 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				2B1959FE453146D7BDA709F187794728 /* PBXTargetDependency */,
+				12CA1612B23C55FFC83A66CA404AEE3C /* PBXTargetDependency */,
+			);
+			name = "Pods-HapticGenerator_Example-HapticGenerator_ExampleTests";
+			productName = "Pods-HapticGenerator_Example-HapticGenerator_ExampleTests";
+			productReference = C8E44BA7A19E000266C279FA05656A4B /* Pods_HapticGenerator_Example_HapticGenerator_ExampleTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		AB17B9291DAC91FDA114A78DE59137A0 /* Pods-HapticGenerator_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4261938CAF32A73FD1A2189703C99253 /* Build configuration list for PBXNativeTarget "Pods-HapticGenerator_Example" */;
+			buildPhases = (
+				4BB897462728DB21BD5D422767024513 /* Headers */,
+				B07B4412C6062356FB66D3EA1DACFE1C /* Sources */,
+				90F6AC700CA72E3A3A6CA747D3AC5770 /* Frameworks */,
+				9CF1F49CA4A56876ECF59143885D27F7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F61A6C5F622314248BC45F3BBFDA515D /* PBXTargetDependency */,
 			);
 			name = "Pods-HapticGenerator_Example";
 			productName = "Pods-HapticGenerator_Example";
-			productReference = DCD7CF3077E2DB59433975E16A2133E8 /* Pods_HapticGenerator_Example.framework */;
+			productReference = C2B71AFBDD7C9E6811E30FEE285680BF /* Pods_HapticGenerator_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		ADEF9D39441057203023056F7B95656D /* HapticGenerator */ = {
+		E25E9199DA8CA76DCCCA41120AC94711 /* HapticGenerator */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9BA1F08525ED369BFDD4574377295732 /* Build configuration list for PBXNativeTarget "HapticGenerator" */;
+			buildConfigurationList = B21983FE7914A75D49A8CBA2DC681DB4 /* Build configuration list for PBXNativeTarget "HapticGenerator" */;
 			buildPhases = (
-				B981C52E49B091CB15B2765B59E39062 /* Sources */,
-				28979E503CC04BD2496BFE128FB50F35 /* Frameworks */,
-				E35764C931DFB9FA5DAC8F22485904A5 /* Headers */,
+				87363D6C7B46A46FA33AF76EB9AC6281 /* Headers */,
+				06CA336E4BC29693CD3106A33B7DD7C4 /* Sources */,
+				564ED2B14BCC40E0EAAB4B3CC58B23C3 /* Frameworks */,
+				A91B2BD7F3A52D30BC4A147561648FFF /* Resources */,
 			);
 			buildRules = (
 			);
@@ -275,137 +308,273 @@
 			);
 			name = HapticGenerator;
 			productName = HapticGenerator;
-			productReference = 53E264177B1D9CE26539F55F56D63C71 /* HapticGenerator.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		BA5A2A6DDD5363B80FFABF09FAC2402E /* Pods-HapticGenerator_Example-HapticGenerator_ExampleTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 0D01C37F8D3903F216C11A9E2F2ACBEB /* Build configuration list for PBXNativeTarget "Pods-HapticGenerator_Example-HapticGenerator_ExampleTests" */;
-			buildPhases = (
-				51AA9FB0EA6D6BB5A82EFCDC6F359940 /* Sources */,
-				54319309082756677564E04B14F51A09 /* Frameworks */,
-				0FE8AA4ABD81D63A53698C5662E1A21F /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				DAE45D2B875460EC2D4DC5E02072B675 /* PBXTargetDependency */,
-			);
-			name = "Pods-HapticGenerator_Example-HapticGenerator_ExampleTests";
-			productName = "Pods-HapticGenerator_Example-HapticGenerator_ExampleTests";
-			productReference = AD47165B6F18FCF4CD65A3F6D75BE670 /* Pods_HapticGenerator_Example_HapticGenerator_ExampleTests.framework */;
+			productReference = CC983BA8D5187E584F39BDA1CC65867A /* HapticGenerator.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0910;
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
 				TargetAttributes = {
-					ADEF9D39441057203023056F7B95656D = {
-						LastSwiftMigration = 1000;
+					E25E9199DA8CA76DCCCA41120AC94711 = {
+						LastSwiftMigration = 1140;
 					};
 				};
 			};
-			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
-			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = F46CD0F68B4EE14DAEF759ADE4C44530 /* Products */;
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 39E96B245B10E99E66A72A24AEE4DDF8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				ADEF9D39441057203023056F7B95656D /* HapticGenerator */,
-				9D5D1FAEBEE113AB2588D76B38482774 /* Pods-HapticGenerator_Example */,
-				BA5A2A6DDD5363B80FFABF09FAC2402E /* Pods-HapticGenerator_Example-HapticGenerator_ExampleTests */,
+				E25E9199DA8CA76DCCCA41120AC94711 /* HapticGenerator */,
+				AB17B9291DAC91FDA114A78DE59137A0 /* Pods-HapticGenerator_Example */,
+				35406887E04277DF290BDD7AD1400BD3 /* Pods-HapticGenerator_Example-HapticGenerator_ExampleTests */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		016D88DDF56F67A2B1CE04D3FC40BFD9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CF1F49CA4A56876ECF59143885D27F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A91B2BD7F3A52D30BC4A147561648FFF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		51AA9FB0EA6D6BB5A82EFCDC6F359940 /* Sources */ = {
+		06CA336E4BC29693CD3106A33B7DD7C4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A990201794FFE511BB5A18458D45FBDF /* Pods-HapticGenerator_Example-HapticGenerator_ExampleTests-dummy.m in Sources */,
+				BFF162AF6DE6D50872F94DBEBCA2DE4C /* HapticGenerator-dummy.m in Sources */,
+				06D0FC83FBFFF7C420681E914B76432F /* HapticGenerator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		81D7ACB59428A085485D03066623110D /* Sources */ = {
+		890DD25EB922669B8B296139398D012C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6C7EEEB7B4F3F25BE5055CAEA6C03EFD /* Pods-HapticGenerator_Example-dummy.m in Sources */,
+				3BA49BE8C78E0991E87AAF4FE294D6E8 /* Pods-HapticGenerator_Example-HapticGenerator_ExampleTests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B981C52E49B091CB15B2765B59E39062 /* Sources */ = {
+		B07B4412C6062356FB66D3EA1DACFE1C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C947A80CD63327B14D754AAB4335BFF3 /* HapticGenerator-dummy.m in Sources */,
-				9724C4168DE1542EB8ABB50B89AF254D /* HapticGenerator.swift in Sources */,
+				DF2D4BD95736ED19DDC0375D91275362 /* Pods-HapticGenerator_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		2B1959FE453146D7BDA709F187794728 /* PBXTargetDependency */ = {
+		12CA1612B23C55FFC83A66CA404AEE3C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = HapticGenerator;
-			target = ADEF9D39441057203023056F7B95656D /* HapticGenerator */;
-			targetProxy = 9651435036F1300BD6065FF1C2381B07 /* PBXContainerItemProxy */;
+			target = E25E9199DA8CA76DCCCA41120AC94711 /* HapticGenerator */;
+			targetProxy = 57F808BBB4B3EE6418537AE023936AE9 /* PBXContainerItemProxy */;
 		};
-		DAE45D2B875460EC2D4DC5E02072B675 /* PBXTargetDependency */ = {
+		F61A6C5F622314248BC45F3BBFDA515D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = HapticGenerator;
-			target = ADEF9D39441057203023056F7B95656D /* HapticGenerator */;
-			targetProxy = 8004B2DD807A96FB48FC85EC6D2CE708 /* PBXContainerItemProxy */;
+			target = E25E9199DA8CA76DCCCA41120AC94711 /* HapticGenerator */;
+			targetProxy = 08B107A6CB733CE845384187AC53D0DB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		345CC476DF4A7516DBD2220CF5035FF3 /* Debug */ = {
+		60A7F9B4A8E92A5B16CC2AA887D9FE07 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		703F4549B93D93B672CC24331F905D3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58567B46CA10E41CB221877C0F33DF9C /* Pods-HapticGenerator_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-HapticGenerator_Example/Pods-HapticGenerator_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HapticGenerator_Example/Pods-HapticGenerator_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		76BA0E2E49E4559CB1B68B7CE9DCC5D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCF9EFF5F2C4F92C269CE221852590B2 /* Pods-HapticGenerator_Example-HapticGenerator_ExampleTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-HapticGenerator_Example-HapticGenerator_ExampleTests/Pods-HapticGenerator_Example-HapticGenerator_ExampleTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HapticGenerator_Example-HapticGenerator_ExampleTests/Pods-HapticGenerator_Example-HapticGenerator_ExampleTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7E1F3D358966F24610AD782F313B4C40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -414,336 +583,196 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		41417B219C77FA2AFE5CA9329F4425E3 /* Release */ = {
+		BFD71B3423044565E6AF16738442BA13 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E4BD324D637AF4EA9CBE1A105FA336F5 /* Pods-HapticGenerator_Example-HapticGenerator_ExampleTests.release.xcconfig */;
+			baseConfigurationReference = A379B835B02FDC9302EE231CCCFB8BE7 /* Pods-HapticGenerator_Example-HapticGenerator_ExampleTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-HapticGenerator_Example-HapticGenerator_ExampleTests/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-HapticGenerator_Example-HapticGenerator_ExampleTests/Pods-HapticGenerator_Example-HapticGenerator_ExampleTests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-HapticGenerator_Example-HapticGenerator_ExampleTests/Pods-HapticGenerator_Example-HapticGenerator_ExampleTests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_HapticGenerator_Example_HapticGenerator_ExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		422C1F8684654E37B20D1826A368B152 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 36A5F82F0FF946FE8C1E8C6F2C084CFD /* Pods-HapticGenerator_Example.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-HapticGenerator_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-HapticGenerator_Example/Pods-HapticGenerator_Example.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_HapticGenerator_Example;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		52D99189002D2B5A6F80CB839267C2CA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F422995AF34D6D9F71F39E779CE1B6A8 /* HapticGenerator.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/HapticGenerator/HapticGenerator-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/HapticGenerator/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/HapticGenerator/HapticGenerator.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = HapticGenerator;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		5D74E5FA293F0031CEE752308A15553A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F422995AF34D6D9F71F39E779CE1B6A8 /* HapticGenerator.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/HapticGenerator/HapticGenerator-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/HapticGenerator/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/HapticGenerator/HapticGenerator.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = HapticGenerator;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		717E77604BFBB04BEAF56608A1CB2EDE /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_REQUIRED = NO;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
 				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		C766137526FAA3A7828CF6AEE7BB2D60 /* Debug */ = {
+		F6E13E22591C8494478D01FD0C1C3993 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FC1A91B08BA438F2E23F189643670423 /* Pods-HapticGenerator_Example.debug.xcconfig */;
+			baseConfigurationReference = BBF4A07FA2B6651412AC048DC417C6CB /* HapticGenerator.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-HapticGenerator_Example/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/HapticGenerator/HapticGenerator-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/HapticGenerator/HapticGenerator-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/HapticGenerator/HapticGenerator.modulemap";
+				PRODUCT_MODULE_NAME = HapticGenerator;
+				PRODUCT_NAME = HapticGenerator;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F8FBFD3D6BB757FBD192DCED48BEDB38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4878179D2A36AE462989E7BCC3C3415 /* HapticGenerator.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/HapticGenerator/HapticGenerator-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/HapticGenerator/HapticGenerator-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/HapticGenerator/HapticGenerator.modulemap";
+				PRODUCT_MODULE_NAME = HapticGenerator;
+				PRODUCT_NAME = HapticGenerator;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FA3A6C1402CA57F8151E3D77397C4B52 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF44FF3B97A1CAC949C8995F9C9E4D7F /* Pods-HapticGenerator_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-HapticGenerator_Example/Pods-HapticGenerator_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-HapticGenerator_Example/Pods-HapticGenerator_Example.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_HapticGenerator_Example;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
-		};
-		F947FF115B1B120B9860BA47ED9A6638 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 14C39E35322AC8B8DEF03E7402521673 /* Pods-HapticGenerator_Example-HapticGenerator_ExampleTests.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-HapticGenerator_Example-HapticGenerator_ExampleTests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-HapticGenerator_Example-HapticGenerator_ExampleTests/Pods-HapticGenerator_Example-HapticGenerator_ExampleTests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_HapticGenerator_Example_HapticGenerator_ExampleTests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
+			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0D01C37F8D3903F216C11A9E2F2ACBEB /* Build configuration list for PBXNativeTarget "Pods-HapticGenerator_Example-HapticGenerator_ExampleTests" */ = {
+		3707E962F46361B5ED8B73F950AB128B /* Build configuration list for PBXNativeTarget "Pods-HapticGenerator_Example-HapticGenerator_ExampleTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F947FF115B1B120B9860BA47ED9A6638 /* Debug */,
-				41417B219C77FA2AFE5CA9329F4425E3 /* Release */,
+				76BA0E2E49E4559CB1B68B7CE9DCC5D9 /* Debug */,
+				BFD71B3423044565E6AF16738442BA13 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0DFE346CC15E1EC3E5331CEEAFD838C0 /* Build configuration list for PBXNativeTarget "Pods-HapticGenerator_Example" */ = {
+		4261938CAF32A73FD1A2189703C99253 /* Build configuration list for PBXNativeTarget "Pods-HapticGenerator_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C766137526FAA3A7828CF6AEE7BB2D60 /* Debug */,
-				422C1F8684654E37B20D1826A368B152 /* Release */,
+				703F4549B93D93B672CC24331F905D3B /* Debug */,
+				FA3A6C1402CA57F8151E3D77397C4B52 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				345CC476DF4A7516DBD2220CF5035FF3 /* Debug */,
-				717E77604BFBB04BEAF56608A1CB2EDE /* Release */,
+				7E1F3D358966F24610AD782F313B4C40 /* Debug */,
+				60A7F9B4A8E92A5B16CC2AA887D9FE07 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9BA1F08525ED369BFDD4574377295732 /* Build configuration list for PBXNativeTarget "HapticGenerator" */ = {
+		B21983FE7914A75D49A8CBA2DC681DB4 /* Build configuration list for PBXNativeTarget "HapticGenerator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				52D99189002D2B5A6F80CB839267C2CA /* Debug */,
-				5D74E5FA293F0031CEE752308A15553A /* Release */,
+				F6E13E22591C8494478D01FD0C1C3993 /* Debug */,
+				F8FBFD3D6BB757FBD192DCED48BEDB38 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 }

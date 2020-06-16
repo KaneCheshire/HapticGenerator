@@ -8,6 +8,12 @@ Easy peasy haptic generation in iOS.
 
 ## Installation
 
+### Swift Package Manager
+
+HapticGenerator supports SPM, simply add HapticGenerator as a package dependency in Xcode 11 or newer.
+
+### Cocoapods
+
 Add the following to your podfile:
 
 ```ruby
@@ -15,6 +21,8 @@ pod 'HapticGenerator'
 ```
 
 and then run `pod update` in Terminal.
+
+### Manual
 
 Or you can just add `HapticGenerator.swift` to your project manually.
 

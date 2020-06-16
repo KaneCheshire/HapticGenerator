@@ -1,8 +1,8 @@
 {
   "name": "HapticGenerator",
-  "version": "1.0.0",
-  "summary": "Easy peasy haptic generation on iOS.",
-  "description": "Apple's UIFeedbackGenerator subclasses are not difficult to use, but they are messy.\nHapticGenerator tidies this up and makes the process of creating different types of haptics on iOS easy and coherent.",
+  "version": "4.1.0",
+  "summary": "Seriously simple haptic generation on iOS.",
+  "description": "Apple's UIFeedbackGenerator subclasses are not difficult to use, but they are messy.\nHapticGenerator tidies everything and makes the process of creating different types of haptics on iOS easy and coherent.\nHapticGenerator now comes with convenience constants for all haptics making it even easier, plus the ability to keep the taptic engine powered up after each use automatically.",
   "homepage": "https://github.com/kanecheshire/HapticGenerator",
   "license": {
     "type": "MIT",
@@ -13,14 +13,11 @@
   },
   "source": {
     "git": "https://github.com/kanecheshire/HapticGenerator.git",
-    "tag": "1.0.0"
+    "tag": "4.1.0"
   },
   "social_media_url": "https://twitter.com/kanecheshire",
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": [
-    "HapticGenerator/Classes/**/*",
-    "HapticGenerator.swift"
-  ]
+  "source_files": "Sources/HapticGenerator.swift"
 }
