@@ -20,20 +20,6 @@
                ReferencedContainer = "container:HapticGenerator.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "607FACE41AFB9204008FA782"
-               BuildableName = "HapticGenerator_Tests.xctest"
-               BlueprintName = "HapticGenerator_Tests"
-               ReferencedContainer = "container:HapticGenerator.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
@@ -51,16 +37,6 @@
          </BuildableReference>
       </MacroExpansion>
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C3ADCCDB1EB13A9400C7DA0D"
-               BuildableName = "HapticGenerator_ExampleTests.xctest"
-               BlueprintName = "HapticGenerator_ExampleTests"
-               ReferencedContainer = "container:HapticGenerator.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
